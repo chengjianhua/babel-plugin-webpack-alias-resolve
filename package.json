@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-webpack-alias-resolve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a babel plugin can resolve the webpack alias when you use 'require' or 'import' with babel. Besides, it supports that you can 'path.resolve()' or 'require.resolve()' to get the real path transformed according to webpack alias.",
   "main": "lib/index.js",
   "scripts": {
