@@ -1,0 +1,51 @@
+{
+  "name": "babel-plugin-webpack-alias-resolve",
+  "version": "1.0.0",
+  "description": "a babel plugin can resolve the webpack alias when you use 'require' or 'import' with babel. Besides, it supports that you can 'path.resolve()' or 'require.resolve()' to get the real path transformed according to webpack alias.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "rm -r lib | npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "webpack",
+    "alias",
+    "resolve"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chengjianhua/babel-plugin-webpack-alias-resolve.git"
+  },
+  "author": "jianhua.cheng <w.chengjianhua@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-types": "^6.14.0",
+    "find-up": "^2.0.0",
+    "lodash.some": "^4.5.1",
+    "lodash.template": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
+    "babel-plugin-transform-es2015-parameters": "^6.11.4",
+    "babel-plugin-transform-es2015-spread": "^6.5.2",
+    "babel-plugin-transform-export-extensions": "^6.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-strict-mode": "^6.5.2",
+    "babel-register": "^6.14.0",
+    "codecov": "^1.0.1",
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.5.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "estraverse-fb": "^1.3.1",
+    "nyc": "^10.0.0",
+    "semantic-release": "^6.3.2",
+    "watch": "^1.0.0"
+  }
+}
