@@ -178,7 +178,7 @@ export default function({ types: t }) {
               const isModule = !notModuleRegExp.test(aliasTo);
 
               if(isModule) {
-                path.node.arguments = [StringLiteral(aliasTo)];
+                path.node.arguments[0] = StringLiteral(aliasTo);
                 return;
               }
 
@@ -227,7 +227,7 @@ export default function({ types: t }) {
                 requiredFilePath += extension || '';
               }
 
-              path.node.arguments = [StringLiteral(requiredFilePath)];
+              path.node.arguments[0] = StringLiteral(requiredFilePath);
               return;
             }
           }
