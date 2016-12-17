@@ -12,11 +12,11 @@ Atom 作为新一代的文本编辑器，插件丰富，可定制化程度高。
 
 我们先要知道，因为 Atom 就是个使用浏览器内核编写的文本编辑器，所以一整个编辑器都能当作一个浏览器来看。所以我们能够使用 CSS 来定义样式，甚至还能通过打开开发者模式来审查元素（**View --> Developer --> Open In Dev Mode**）。所以接下来就让我们打开自定义样式表来修改我们想要的样子吧（**File --> Stylesheet**）。
 
-![atom-stylesheet](images/2016/05/atom-stylesheet.png)
+![atom-stylesheet](http://7xs7xr.com1.z0.glb.clouddn.com/atom-stylesheet.png)
 
 # Tree View
 
-![Tree View 修改前的样子](images/2016/05/old-tree-view.png)
+![Tree View 修改前的样子](http://7xs7xr.com1.z0.glb.clouddn.com/old-tree-view.png)
 
 接下来让我们修改我们之前在样式表中看到的如下代码改成我们期望的
 
@@ -37,7 +37,7 @@ Atom 作为新一代的文本编辑器，插件丰富，可定制化程度高。
 
 设置完成的效果如下
 
-![设置后的tree view显示效果](images/2016/05/new-tree-view.png)
+![设置后的tree view显示效果](http://7xs7xr.com1.z0.glb.clouddn.com/new-tree-view.png)
 
 是不是看起来舒畅了许多，拯救强迫症！
 
@@ -53,6 +53,6 @@ Atom 作为新一代的文本编辑器，插件丰富，可定制化程度高。
 
 这样就完成了，接下来给一张完成后的效果图
 
-![](images/2016/05/mardown-preview-font-be-customized.png)
+![](http://7xs7xr.com1.z0.glb.clouddn.com/mardown-preview-font-be-customized.png)
 
 送给不喜欢宋体的同学们，更多小技巧再挖掘。
