@@ -16,6 +16,8 @@ tags: [Note, mocha, JavaScript]
 
 其中我较喜欢 `should`, 因为它可以直接以属性的方式嵌入所有内置原生对象, 所以可以很方便的以 `variable.should.equal(someValue)` 的形式来书写断言, 和 `expect` 相比较可以省略一对 `()` ... 如果是 `expect` 风格的话, 上述示例代码等价于 `expect(variable).to.equal(someValue)`. 在一般情况下两者的使用时几乎相同的, `expect` 作为断言的开始, `should` 接在想要断言的变量之后. 但是有一些地方 `should` 就需要变换一下我上述所说的写法了.
 
+<!--more-->
+
 #### Should
 
 `should` 实际上是给所有的对象都扩充了一个 `getter` 属性 `should`, 如果你想在浏览器中运行测试的话, `should` 在 IE 浏览器中会有一些问题. 正是因为 `should` 是扩充了 `Object.prototype`, 所以如果变量的值为 `null` 或 `undefined` 的时候, 是无法使用 `.should.equal()` 的形式的, 因为 `null`, `undefined` 的原型不是 `Object`,所以`should` 不存在. 所以此时应当如下所示使用.
